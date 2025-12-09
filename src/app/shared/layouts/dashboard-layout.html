@@ -1,0 +1,10 @@
+<mat-drawer-container autosize class="bg-bg-primary! text-white! h-screen! rounded-none!">
+  <mat-drawer mode="side" opened="{{ toggleSidebar.toggle() }}" class="styles-mat">
+    <sidebar />
+  </mat-drawer>
+
+  <main>
+    <navbar></navbar>
+    <router-outlet />
+  </main>
+</mat-drawer-container>

@@ -1,0 +1,26 @@
+<div class="flex justify-between items-center px-5 py-3 border-b border-gray-700">
+  <button
+    matMiniFab
+    class="bg-transparent! text-white! hover:text-gray-400!"
+    (click)="toggleSidebar.toggleSidebar()"
+  >
+    <mat-icon fontIcon="menu"></mat-icon>
+  </button>
+
+  <div class="flex items-center gap-2">
+    <button
+      type="button"
+      matMiniFab
+      class="bg-transparent! text-white! hover:text-gray-400! relative"
+    >
+      <span class="absolute top-0 right-0 bg-red-500! text-white! rounded-full! w-4 h-4! text-xs!"
+        >9</span
+      >
+      <mat-icon fontIcon="notifications"></mat-icon>
+    </button>
+
+    <button type="button" matMiniFab class="bg-transparent! text-white! hover:text-gray-400!">
+      <mat-icon fontIcon="logout"></mat-icon>
+    </button>
+  </div>
+</div>

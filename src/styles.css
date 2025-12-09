@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-bg-primary: #030712;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #030712;
+}
+
+/* mat-form-field */
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  @apply bg-bg-primary! text-white!;
+}
+
+.styles-mat {
+  @apply bg-bg-primary! text-white! border-r! border-gray-700! rounded-none! w-60! h-screen!;
+}
